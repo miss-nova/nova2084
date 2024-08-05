@@ -1,0 +1,55 @@
+/* nova: 2084 website main css! */
+
+#test {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(129, 15, 15, 0.7);
+  transition: background-color .1s;
+}
+#test:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+#test:hover:after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, rgba(129, 15, 15, 0.9), rgba(129, 15, 15, 0.7), rgba(129, 15, 15, 0.9));
+  background-size: 200% 200%;
+  background-position: 0% 100%;
+  animation-name: test_hover;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+@keyframes test_hover {
+  from {
+    background-position: 0% 100%;
+  }
+  to {
+    background-position: 100% 0%;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@font-face {
+    font-family: "LazenbyCompSmooth";
+    src: url("../resources/fonts/LazenbyCompSmooth.ttf");
+}
+
+h1, h2, h3, h4, h5, h6, p {
+font-family: "LazenbyCompSmooth";
+color: white;
+}
