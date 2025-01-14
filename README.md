@@ -1,2 +1,2 @@
 # nova2084
-![Nova](https://blackespresso.productions/resources/nova_v2.png)
+![Nova](https://nova2084.com/resources/Nova-2084.gif)
