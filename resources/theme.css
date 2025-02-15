@@ -2,6 +2,8 @@
 body {
 	overflow: hidden;
 	background-color: #000;
+	align-content: center;
+	justify-content: center;
 }
 
 h1 {
